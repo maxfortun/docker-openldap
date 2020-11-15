@@ -1,4 +1,4 @@
 #!/bin/sh
 
-slapd -u ldap -g ldap -h ldap:/// -d 4
+slapd -u ldap -g ldap -h "ldaps:/// ldap:///" -d 4
 
