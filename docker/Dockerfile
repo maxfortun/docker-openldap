@@ -8,6 +8,8 @@ RUN apk --update add openldap openldap-back-mdb && \
 
 COPY docker-entrypoint.sh /usr/local/bin/
 
+RUN rm -rf /var/cache/apk/*
+
 EXPOSE 389/tcp
 EXPOSE 636/tcp
 
